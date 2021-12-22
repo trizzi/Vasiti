@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "../../img/pic-4.svg",
+    "name": "Joseph Ike",
+    "locaton": "Ikeja",
+    "occupation": "customer",
+    "text": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+  },
+  {
+    "id": 2,
+    "image": "../../img/pic-5.svg",
+    "name": "Adetola Fashina",
+    "locaton": "Ibadan",
+    "occupation": "customer",
+    "text": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+  },
+  {
+    "id": 3,
+    "image": "../../img/pic-6.svg",
+    "name": "Emmanuel Fayemi",
+    "locaton": "In Akoka",
+    "occupation": "customer",
+    "text": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+  },
+  {
+    "id": 4,
+    "image": "../../img/pic-7.svg",
+    "name": "Chisom Obilor",
+    "locaton": "In Magodo",
+    "occupation": "vendor",
+    "text": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+  },
+  {
+    "id": 5,
+    "image": "../../img/pic-8.svg",
+    "name": "Adunoluwa Adeyemi",
+    "locaton": "Iwo Road",
+    "occupation": "vendor",
+    "text": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+  },
+  {
+    "id": 6,
+    "image": "../../img/pic-9.svg",
+    "name": "Chidi Okeke",
+    "locaton": "In Somolu",
+    "occupation": "vendor",
+    "text": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+  }
+]
