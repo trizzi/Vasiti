@@ -7,14 +7,15 @@ import secondData from './secondData.json';
 const GridTwo = () => {
   return (
     <Container>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6} lg={4}>
-          {secondData.map((data) => {
-            return (
-              <GridtwoItems key={data.id} data={data} />
-            );
-          })}
-        </Grid>
+      <Grid
+        container
+        spacing={2}
+        style={{ padding: '3rem 0' }}>
+        {secondData.map((data) => (
+          <Grid item xs={12} md={6} lg={4}>
+            <GridtwoItems key={data.id} data={data} />
+          </Grid>
+        ))}
       </Grid>
     </Container>
   );
