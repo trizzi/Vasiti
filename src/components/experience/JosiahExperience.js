@@ -3,8 +3,6 @@ import { makeStyles } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
-// import TenthPic from '../../img/pic-10.svg';
-// import EleventhPic from '../../img/pic-11.svg';
 import TwelvethPic from '../../img/pic-12.svg';
 import Mask from '../../img/mask.svg';
 

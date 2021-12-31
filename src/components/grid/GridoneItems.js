@@ -11,11 +11,11 @@ import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   greenButton: {
-    background: '#049A01',
+    background: '#F0FFEE',
     color: '#049A01',
   },
   blueButton: {
-    background: '#0D019A',
+    background: '#EEF8FF',
     color: '#0D019A',
   },
 }));
@@ -49,8 +49,9 @@ const GridoneItems = ({ data }) => {
                   {data.locaton}
                 </Button>
                 <Button
+                  variant='contained'
                   size='small'
-                  color={
+                  className={
                     data.occupation === 'customer'
                       ? classes.blueButton
                       : classes.greenButton
