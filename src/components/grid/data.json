@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "../../img/pic-4.svg",
+    "image": "img/pic-4.svg",
     "name": "Joseph Ike",
     "locaton": "Ikeja",
     "occupation": "customer",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "../../img/pic-5.svg",
+    "image": "img/pic-5.svg",
     "name": "Adetola Fashina",
     "locaton": "Ibadan",
     "occupation": "customer",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "../../img/pic-6.svg",
+    "image": "img/pic-6.svg",
     "name": "Emmanuel Fayemi",
     "locaton": "In Akoka",
     "occupation": "customer",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "image": "../../img/pic-7.svg",
+    "image": "img/pic-7.svg",
     "name": "Chisom Obilor",
     "locaton": "ikeja",
     "occupation": "vendor",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "image": "../../img/pic-8.svg",
+    "image": "img/pic-8.svg",
     "name": "Adunoluwa Adeyemi",
     "locaton": "ikeja",
     "occupation": "vendor",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "image": "../../img/pic-9.svg",
+    "image": "img/pic-9.svg",
     "name": "Chidi Okeke",
     "locaton": "ikeja",
     "occupation": "vendor",

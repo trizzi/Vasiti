@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const GridtwoItems = ({ data }) => {
+const GridtwoItems = ({ seconddata }) => {
   const classes = useStyles();
   return (
     <Box px={{ xs: 3, sm: 10 }} py={{ xs: 5, sm: 10 }}>
@@ -24,9 +24,9 @@ const GridtwoItems = ({ data }) => {
           <Grid item xs={12} sm={4}>
             <Box>
               <Card>
-                <CardMedia>{data.image}</CardMedia>
+                <CardMedia>{seconddata.image}</CardMedia>
                 <CardHeader
-                  title={data.name}
+                  title={seconddata.name}
                   style={{
                     fontFamily: 'Inter',
                     fontWeight: '700',
@@ -36,7 +36,7 @@ const GridtwoItems = ({ data }) => {
                 <CardContent>
                   <CardActions>
                     <Button size='small' color='primary'>
-                      {data.occupation}
+                      {seconddata.occupation}
                     </Button>
                   </CardActions>
                   {/* <Typography size='small' color='primary'>
@@ -47,7 +47,7 @@ const GridtwoItems = ({ data }) => {
                       fontFamily: 'Inter',
                       fontWeight: '400',
                     }}>
-                    {data.text}
+                    {seconddata.text}
                   </Typography>
                 </CardContent>
               </Card>
