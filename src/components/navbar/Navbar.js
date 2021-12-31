@@ -5,6 +5,7 @@ import {
   CssBaseline,
   Typography,
   makeStyles,
+  Button,
 } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom';
@@ -67,17 +68,19 @@ function Navbar() {
               <Link to='/login' className={classes.link}>
                 LOGIN
               </Link>
-              <Link
-                to='/sign-up'
-                style={{
-                  background: '#EE3C24',
-                  color: '#fff',
-                  padding: '0.5rem 1rem',
-                  borderRadius: '5px',
-                }}
-                className={classes.link}>
-                SIGN UP
-              </Link>
+              <Button className={classes.link}>
+                <Link
+                  to='/sign-up'
+                  style={{
+                    background: '#EE3C24',
+                    textDecoration: 'none',
+                    color: '#fff',
+                    padding: '0.5rem 1rem',
+                    borderRadius: '5px',
+                  }}>
+                  SIGN UP
+                </Link>
+              </Button>
             </div>
           </Toolbar>
         </Container>
