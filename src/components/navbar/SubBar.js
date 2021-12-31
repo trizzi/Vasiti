@@ -12,10 +12,7 @@ const useStyles = makeStyles((theme) => ({
   navlinks: {
     marginLeft: theme.spacing(2),
   },
-  logo: {
-    flexGrow: '1',
-    cursor: 'pointer',
-  },
+
   link: {
     textDecoration: 'none',
     color: '#000',

@@ -1,4 +1,5 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import { CardHeader, Typography } from '@material-ui/core';
@@ -8,7 +9,14 @@ import { CardActions } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 
+const useStyles = makeStyles((theme) => ({
+  media: {
+    borderRadius: '50%',
+  },
+}));
+
 const GridtwoItems = ({ data }) => {
+  const classes = useStyles();
   return (
     <Box px={{ xs: 3, sm: 10 }} py={{ xs: 5, sm: 10 }}>
       <Container maxWidth='lg'>

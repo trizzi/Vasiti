@@ -4,14 +4,12 @@ import Container from '@material-ui/core/Container';
 import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import { Link } from '@material-ui/core';
-// import Icon from '@material-ui/core/Icon';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
   icons: {
+    background: '#fff',
+    color: '#222',
+    padding: '0.5rem',
     borderRadius: '50%',
   },
 }));
@@ -173,13 +171,18 @@ const Footer = () => {
                     display: 'flex',
                     justifyContent: 'space-between',
                   }}>
-                  <FacebookIcon className={classes.icons} />
-                  <InstagramIcon
-                    className={classes.icons}
-                  />
-                  <TwitterIcon className={classes.icons} />
-                  <LinkedInIcon className={classes.icons} />
-                  {/* <Icon className='fab fa-facebook' /> */}
+                  <div className={classes.icons}>
+                    <i className='fab fa-facebook-f'></i>
+                  </div>
+                  <div className={classes.icons}>
+                    <i className='fab fa-instagram'></i>
+                  </div>
+                  <div className={classes.icons}>
+                    <i className='fab fa-twitter'></i>
+                  </div>
+                  <div className={classes.icons}>
+                    <i className='fab fa-linkedin-in'></i>
+                  </div>
                 </Link>
               </Box>
               <Box>
