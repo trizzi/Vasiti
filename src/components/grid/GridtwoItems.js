@@ -4,6 +4,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { CardHeader, Typography } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import Container from '@material-ui/core/Container';
+import { CardActions } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 
@@ -16,14 +17,30 @@ const GridtwoItems = ({ data }) => {
             <Box>
               <Card>
                 <CardMedia>{data.image}</CardMedia>
-                <CardHeader title={data.name} />
+                <CardHeader
+                  title={data.name}
+                  style={{
+                    fontFamily: 'Inter',
+                    fontWeight: '700',
+                  }}
+                />
+
                 <CardContent>
-                  <Typography
-                    variant='subtitle1'
-                    color='textSecondary'>
+                  <CardActions>
+                    <Button size='small' color='primary'>
+                      {data.occupation}
+                    </Button>
+                  </CardActions>
+                  {/* <Typography size='small' color='primary'>
                     {data.occupation}
+                  </Typography> */}
+                  <Typography
+                    style={{
+                      fontFamily: 'Inter',
+                      fontWeight: '400',
+                    }}>
+                    {data.text}
                   </Typography>
-                  <Typography>{data.text}</Typography>
                 </CardContent>
               </Card>
             </Box>

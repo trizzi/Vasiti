@@ -13,17 +13,23 @@ const GridoneItems = ({ data }) => {
     <Container maxWidth='lg'>
       <Grid columns={4}>
         <Grid>
-          <Card>
+          <Card elevation={0}>
             <CardMedia
               style={{
-                height: '150px',
+                width: '60px',
+                height: '100px',
                 borderRadius: '50%',
-              }}
-              image={data.image}
-            />
+                padding: '2rem 9rem 1rem ',
+              }}>
+              <img src={data.image} alt='user-pictures' />
+            </CardMedia>
             <CardHeader
               title={data.name}
-              style={{ color: '#000' }}
+              style={{
+                color: '#000',
+                fontFamily: 'Inter',
+                fontWeight: '700',
+              }}
             />
             <CardContent>
               <CardActions>
@@ -34,7 +40,13 @@ const GridoneItems = ({ data }) => {
                   {data.occupation}
                 </Button>
               </CardActions>
-              <Typography>{data.text}</Typography>
+              <Typography
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                }}>
+                {data.text}
+              </Typography>
             </CardContent>
           </Card>
         </Grid>

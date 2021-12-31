@@ -1,15 +1,30 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import { Link } from '@material-ui/core';
+// import Icon from '@material-ui/core/Icon';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+const useStyles = makeStyles((theme) => ({
+  icons: {
+    borderRadius: '50%',
+  },
+}));
 
 const Footer = () => {
+  const classes = useStyles();
   return (
     <footer
       style={{
         background: '#25201D',
         color: '#fff',
+        fontFamily: 'Inter',
+        fontWeight: '400',
       }}>
       <Box
         px={{ xs: 3, sm: 10 }}
@@ -17,8 +32,14 @@ const Footer = () => {
         pt={{ xs: 0, sm: 0 }}>
         <Container maxWidth='lg'>
           <Grid container spacing={5}>
-            <Grid item xs={12} sm={3}>
-              <Box>Company</Box>
+            <Grid item xs={6} sm={2}>
+              <Box
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                }}>
+                Company
+              </Box>
               <Box>
                 <Link
                   href='/about'
@@ -42,8 +63,14 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box>Products</Box>
+            <Grid item xs={6} sm={2}>
+              <Box
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                }}>
+                Products
+              </Box>
               <Box>
                 <Link href='#' style={{ color: '#fff' }}>
                   Marketplace
@@ -70,8 +97,14 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box>Careers</Box>
+            <Grid item xs={6} sm={2}>
+              <Box
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                }}>
+                Careers
+              </Box>
               <Box>
                 <Link href='#' style={{ color: '#fff' }}>
                   Become a Campus Rep
@@ -93,8 +126,14 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={3}>
-              <Box>Get in touch</Box>
+            <Grid item xs={6} sm={2}>
+              <Box
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                }}>
+                Get in touch
+              </Box>
               <Box>
                 <Link
                   href='/about'
@@ -115,6 +154,37 @@ const Footer = () => {
               <Box>
                 <Link href='#' style={{ color: '#fff' }}>
                   Help/FAQ
+                </Link>
+              </Box>
+            </Grid>
+            <Grid item xs={6} sm={2}>
+              <Box
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: '700',
+                }}>
+                Join our community
+              </Box>
+              <Box style={{ padding: '2rem 0' }}>
+                <Link
+                  href='/about'
+                  style={{
+                    color: '#fff',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                  }}>
+                  <FacebookIcon className={classes.icons} />
+                  <InstagramIcon
+                    className={classes.icons}
+                  />
+                  <TwitterIcon className={classes.icons} />
+                  <LinkedInIcon className={classes.icons} />
+                  {/* <Icon className='fab fa-facebook' /> */}
+                </Link>
+              </Box>
+              <Box>
+                <Link href='#' style={{ color: '#fff' }}>
+                  Email Newsletter
                 </Link>
               </Box>
             </Grid>

@@ -3,7 +3,6 @@ import {
   AppBar,
   Toolbar,
   CssBaseline,
-  Typography,
   makeStyles,
 } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
@@ -27,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: '1px solid white',
     },
   },
+  '@media (max-width:414px)': {
+    link: {
+      display: 'none',
+    },
+  },
 }));
 
 const SubBar = () => {
@@ -34,13 +38,10 @@ const SubBar = () => {
   return (
     <AppBar
       position='static'
-      style={{ background: '#fff' }}>
+      style={{ background: '#fff', fontFamily: 'Inter' }}>
       <CssBaseline />
       <Container>
         <Toolbar>
-          {/* <Typography variant='h4' className={classes.logo}>
-            <img src={VasitiLogo} alt='Vasiti logo' />
-          </Typography> */}
           <div className={classes.navlinks}>
             <Link
               to='/market-place'
