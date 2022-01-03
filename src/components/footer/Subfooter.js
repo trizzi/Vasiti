@@ -7,6 +7,9 @@ import InputBase from '@material-ui/core/InputBase';
 import NinteenthPic from '../../img/pic-19.svg';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: '0.5rem',
+  },
   img: {
     marginTop: '-3.3rem',
   },
@@ -19,10 +22,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   '@media(max-width:768px)': {
-    root: {
-      marginBottom: '5rem',
-      padding: '0.5rem',
-    },
     img: {
       width: '100%',
     },
@@ -53,7 +52,7 @@ const Subfooter = () => {
         background: '#25201D',
         color: '#fff',
       }}>
-      <Box>
+      <Box className={classes.root}>
         <Container maxWidth='lg'>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={6}>
