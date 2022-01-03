@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   '@media (max-width:414px)': {
     img: {
-      marginBottom: '0',
+      marginBottom: '3.2rem',
       width: '100%',
     },
     text: {
