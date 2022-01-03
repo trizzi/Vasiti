@@ -8,14 +8,30 @@ import NinteenthPic from '../../img/pic-19.svg';
 
 const useStyles = makeStyles((theme) => ({
   img: {
-    marginTop: '-8rem',
+    marginTop: '-3.3rem',
   },
   input: {
     display: 'flex',
     justifyContent: 'space-between',
     background: 'rgba(255, 255, 255, 0.2)',
-    width: '50%',
+    width: '60%',
     borderRadius: '6px',
+  },
+
+  '@media(max-width:768px)': {
+    root: {
+      marginBottom: '5rem',
+      padding: '0.5rem',
+    },
+    img: {
+      width: '100%',
+    },
+    text: {
+      padding: '1rem',
+    },
+    input: {
+      width: '80%',
+    },
   },
 
   '@media (max-width:414px)': {
@@ -24,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
     },
     input: {
-      width: '100%',
+      width: '90%',
     },
   },
 }));
@@ -37,7 +53,7 @@ const Subfooter = () => {
         background: '#25201D',
         color: '#fff',
       }}>
-      <Box px={{ xs: 3, sm: 10 }} py={{ xs: 5, sm: 10 }}>
+      <Box>
         <Container maxWidth='lg'>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={6}>

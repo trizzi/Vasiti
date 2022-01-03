@@ -15,6 +15,20 @@ const useStyles = makeStyles((theme) => ({
     padding: '5rem',
   },
 
+  '@media(max-width:768px)': {
+    root: {
+      marginBottom: '5rem',
+      padding: '0.5rem',
+    },
+    img: {
+      width: '100%',
+      marginBottom: '3.3rem',
+    },
+    text: {
+      padding: '1rem',
+    },
+  },
+
   '@media (max-width:414px)': {
     img: {
       marginBottom: '0.5rem',

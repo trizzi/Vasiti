@@ -12,6 +12,14 @@ const useStyles = makeStyles((theme) => ({
     padding: '0.5rem',
     borderRadius: '50%',
   },
+  links: {
+    paddingTop: '4rem',
+  },
+  iconStyle: {
+    color: '#fff',
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
 }));
 
 const Footer = () => {
@@ -28,9 +36,9 @@ const Footer = () => {
         px={{ xs: 3, sm: 10 }}
         py={{ xs: 5, sm: 10 }}
         pt={{ xs: 0, sm: 0 }}>
-        <Container maxWidth='lg'>
+        <Container maxWidth='lg' className={classes.links}>
           <Grid container spacing={5}>
-            <Grid item xs={6} sm={2}>
+            <Grid item xs={6} sm={6} md={2}>
               <Box
                 style={{
                   fontFamily: 'Inter',
@@ -61,7 +69,7 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={6} sm={2}>
+            <Grid item xs={6} sm={6} md={2}>
               <Box
                 style={{
                   fontFamily: 'Inter',
@@ -95,7 +103,7 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={6} sm={2}>
+            <Grid item xs={6} sm={6} md={2}>
               <Box
                 style={{
                   fontFamily: 'Inter',
@@ -155,7 +163,7 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={6} sm={2}>
+            <Grid item xs={6} sm={6} md={2}>
               <Box
                 style={{
                   fontFamily: 'Inter',
@@ -166,11 +174,7 @@ const Footer = () => {
               <Box style={{ padding: '2rem 0' }}>
                 <Link
                   href='/about'
-                  style={{
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                  }}>
+                  className={classes.iconStyle}>
                   <div className={classes.icons}>
                     <i className='fab fa-facebook-f'></i>
                   </div>

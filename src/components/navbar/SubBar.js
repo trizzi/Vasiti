@@ -23,6 +23,14 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: '1px solid white',
     },
   },
+  '@media(max-width:768px)': {
+    navlinks: {
+      marginLeft: theme.spacing(0),
+    },
+    link: {
+      marginLeft: theme.spacing(4),
+    },
+  },
   '@media (max-width:414px)': {
     link: {
       display: 'none',

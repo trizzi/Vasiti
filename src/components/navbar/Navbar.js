@@ -32,6 +32,21 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: '1px solid white',
     },
   },
+  button: {
+    background: '#EE3C24',
+    textDecoration: 'none',
+    color: '#fff',
+    padding: '0.5rem 1rem',
+    borderRadius: '5px',
+  },
+  '@media(max-width:768px)': {
+    navlinks: {
+      marginLeft: theme.spacing(0),
+    },
+    link: {
+      marginLeft: theme.spacing(4),
+    },
+  },
   '@media (max-width:414px)': {
     link: {
       display: 'none',
@@ -71,13 +86,7 @@ function Navbar() {
               <Button className={classes.link}>
                 <Link
                   to='/sign-up'
-                  style={{
-                    background: '#EE3C24',
-                    textDecoration: 'none',
-                    color: '#fff',
-                    padding: '0.5rem 1rem',
-                    borderRadius: '5px',
-                  }}>
+                  className={classes.button}>
                   SIGN UP
                 </Link>
               </Button>

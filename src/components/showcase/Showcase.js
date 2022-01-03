@@ -8,10 +8,24 @@ import FirstPic from '../../img/pic-1.svg';
 const useStyles = makeStyles((theme) => ({
   img: {
     width: '100%',
-    marginBottom: '4.7rem',
+    marginBottom: '7.4rem',
+    padding: '1rem',
   },
   text: {
     padding: '5rem 7rem',
+  },
+  '@media(max-width:768px)': {
+    root: {
+      marginBottom: '5rem',
+      padding: '0.5rem',
+    },
+    img: {
+      width: '100%',
+      marginBottom: '3.3rem',
+    },
+    text: {
+      padding: '1rem',
+    },
   },
   '@media (max-width:414px)': {
     img: {
@@ -27,8 +41,8 @@ const useStyles = makeStyles((theme) => ({
 const Showcase = () => {
   const classes = useStyles();
   return (
-    <div>
-      <Box px={{ xs: 3, sm: 10 }} py={{ xs: 5, sm: 10 }}>
+    <div className={classes.root}>
+      <Box>
         <Container maxWidth='lg'>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={6}>
